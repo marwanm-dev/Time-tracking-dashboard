@@ -11,7 +11,6 @@ let Duration = 750;
 const getData = async () => {
   const response = await fetch('/data.json');
   const json = await response.json();
-  console.log(json);
   return json;
 }; // data.default
 // ? AnimateIn
