@@ -1,4 +1,4 @@
-import * as data from '/data.json';
+// import * as data from '/data.json';
 // Variables
 const stats = document.querySelector('.stats');
 const reportSlide = document.querySelector('.options');
@@ -7,14 +7,13 @@ let selectedTimeFrame = '';
 let Duration = 750;
 
 // Functions
-// ? Gets correct url
-const getImageUrl = (name, type = 'svg') => {
-  const url = new URL(`/images/icon-${name}.${type}`, import.meta.url).pathname;
-  const otherUrl = new URL(`/dist/assets/icon-${name}.${type}`, import.meta.url).pathname;
-  return url === undefined ? otherUrl : url;
-};
 // ? Fetching
-const getData = () => data.default;
+const getData = async () => {
+  const response = await fetch('/data.json');
+  const json = await response.json();
+  console.log(json);
+  return json;
+}; // data.default
 // ? AnimateIn
 const animateIn = () => {
   const cardSlides = document.querySelectorAll('.card-image');
@@ -56,7 +55,7 @@ const createCards = cardsData => {
                 <h4 class="title">${cardData.title}</h4>
                 <img
                     class="more-icon"
-                    src="${getImageUrl('ellipsis', 'svg')}"
+                    src="/images/icon-ellipsis.svg"
                 />
             </div>
             <div class="card-timeframes">
