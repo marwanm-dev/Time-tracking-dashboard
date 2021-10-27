@@ -1,11 +1,12 @@
 # Time-tracking-dashboard
 
-- Created with Html Css(Sass) Javascript using vite
+- Created with Html Sass Javascript using *vite*🔥
+
 - Fully responsive and animated
 
-# What's different
+- Additional stuff (hovers, animations, effects, etc...)
 
-- Switch
+- Fetched data
 
 # Live
 
@@ -14,4 +15,5 @@
 # Credit
 
 - Inspired By Frontend Mentor
+
 - Website: https://www.frontendmentor.io
