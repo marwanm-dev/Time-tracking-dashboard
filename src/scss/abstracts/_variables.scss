@@ -1,51 +1,12 @@
 // Variables
 // # Colors
-$report: hsl(246, 80%, 60%);
-$card-work: hsl(15, 100%, 70%); // work
-$card-play: hsl(195, 74%, 62%); // play
-$card-study: hsl(348, 100%, 68%); // study
-$card-exercise: hsl(145, 58%, 55%); // exercise
-$card-social: hsl(264, 64%, 52%); // social
-$card-self-care: hsl(43, 84%, 65%); // self care
-$card-types: (
-  'work': $card-work,
-  'play': $card-play,
-  'study': $card-study,
-  'exercise': $card-exercise,
-  'social': $card-social,
-  'self-care': $card-self-care,
-);
-
-$black: hsl(226, 43%, 10%);
-$white: white;
-$dark-blue: hsl(235, 46%, 20%);
-$light-gray: hsl(235, 45%, 61%);
-$pale-blue: hsl(236, 100%, 87%);
 
 // # Typography
-$font-family: 'Rubik', sans-serif;
-$font-size: 18px; // card titles e.g. Work, Play
-$fw-sml: 300;
-$fw-med: 400;
-$fw-lrg: 500;
 
 // # Others
-$spacing-lrg: 7.5rem;
-$spacing: 1.5rem;
-$spacing-sml: 1rem;
-$radius: 0.925rem;
-$card-img-height: 3rem;
-$grid-gap-row: 4rem;
 
 // # Breakpoints
-$break-1: 810;
-$break-2: 720;
-$break-3: 480;
 
 // # Custom Prop
 :root {
-  --card-width: 12rem;
-  --card-height: 9rem;
-  --row-num: 2;
-  --col-num: 3;
 }

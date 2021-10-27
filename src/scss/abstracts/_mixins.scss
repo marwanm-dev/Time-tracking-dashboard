@@ -1,14 +1,20 @@
 @use '../abstracts/variables' as *;
 // Mixins
 
-@mixin flex($dir: column, $jus: center, $alg: center) {
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+}
+@mixin btn-reset {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  cursor: pointer;
+}
+@mixin flex($dir: row, $just: space-between, $align: center) {
   display: flex;
   flex-direction: $dir;
-  justify-content: $jus;
-  align-items: $alg;
-}
-@mixin media($size) {
-  @media (max-width: $size + px) {
-    @content;
-  }
+  justify-content: $just;
+  align-items: $align;
 }
