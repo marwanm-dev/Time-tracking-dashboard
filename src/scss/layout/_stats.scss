@@ -1,0 +1,71 @@
+@use '../abstracts' as *;
+@use '../core' as *;
+// Stats
+
+.stats {
+  display: grid;
+  grid-template-rows: repeat(var(--row-num), var(--card-height));
+  grid-template-columns: repeat(var(--col-num), var(--card-width));
+  grid-gap: $grid-gap-row $spacing;
+  margin-top: $card-img-height - $radius;
+  @include media($break-2) {
+    margin-top: $spacing-lrg + $grid-gap-row;
+  }
+
+  .card {
+    background: $dark-blue;
+    border-radius: $radius;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem 1.2rem;
+    &:hover {
+      background: lighten($dark-blue, 7.5%);
+    }
+    @each $card-type, $card-color in $card-types {
+      &-#{$card-type} {
+        .card-image {
+          background-color: $card-color;
+          background-blend-mode: darken;
+          .img {
+            background: {
+              image: url('/images/icon-#{$card-type}.svg');
+              size: contain;
+              position: center;
+              repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+    &-image {
+      width: 100%;
+      height: $card-img-height;
+      border-radius: $radius $radius 0 0;
+      padding: 0 0.5rem;
+      position: absolute;
+      top: -$card-img-height + $radius;
+      right: 0;
+      z-index: -1;
+
+      //? Javascript
+      transform: translateY(50%);
+      opacity: 0;
+
+      .img {
+        $dim: 48px;
+        width: $dim;
+        height: $dim;
+        margin-left: auto;
+      }
+    }
+    &-header {
+      @include flex(row, space-between);
+      .more-icon {
+        width: 10%;
+      }
+    }
+    &-timeframes {
+      margin-top: $spacing-sml;
+    }
+  }
+}
