@@ -10,7 +10,7 @@
 
 # Live
 
-- https://marodev343-time-tracking-dashboard.pages.dev
+- https://marodevv-time-tracking-dashboard.pages.dev
 
 # Credit
 
