@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
 // Mixins
+@use './variables' as *;
 
 @mixin flex($dir: column, $jus: center, $alg: center) {
   display: flex;
@@ -8,7 +8,7 @@
   align-items: $alg;
 }
 @mixin media($size) {
-  @media (max-width: $size + px) {
+  @media (max-width: #{$size}px) {
     @content;
   }
 }

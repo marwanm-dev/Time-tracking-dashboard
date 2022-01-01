@@ -1,5 +1,8 @@
 // Variables
+
 // # Colors
+
+// ## Primary
 $report: hsl(246, 80%, 60%);
 $card-work: hsl(15, 100%, 70%); // work
 $card-play: hsl(195, 74%, 62%); // play
@@ -16,11 +19,14 @@ $card-types: (
   'self-care': $card-self-care,
 );
 
-$black: hsl(226, 43%, 10%);
-$white: white;
+// ## Secondary
 $dark-blue: hsl(235, 46%, 20%);
 $light-gray: hsl(235, 45%, 61%);
 $pale-blue: hsl(236, 100%, 87%);
+
+// ## Neutral
+$black: hsl(226, 43%, 10%);
+$white: white;
 
 // # Typography
 $font-family: 'Rubik', sans-serif;
@@ -37,13 +43,17 @@ $radius: 0.925rem;
 $card-img-height: 3rem;
 $grid-gap-row: 4rem;
 
+// # Transitions
+$transition: all 0.3s;
+
 // # Breakpoints
 $break-1: 810;
 $break-2: 720;
 $break-3: 480;
 
-// # Custom Prop
+// # Custom Props
 :root {
+  // # Others
   --card-width: 12rem;
   --card-height: 9rem;
   --row-num: 2;

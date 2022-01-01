@@ -1,15 +1,12 @@
-@use '../abstracts/variables' as *;
 // Typography
+@use '../abstracts' as *;
 
+// # Basics
 body {
   font-family: $font-family;
 }
-p {
-  color: $light-gray;
-  .desc & {
-    color: $pale-blue;
-  }
-}
+
+// # Headings | paragraphs | etc..
 h1,
 h2,
 h4 {
@@ -29,4 +26,12 @@ h4 {
 }
 p {
   font-size: 0.9rem;
+}
+
+// # Specifics
+p {
+  color: $light-gray;
+  .desc & {
+    color: $pale-blue;
+  }
 }

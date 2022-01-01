@@ -6,6 +6,8 @@
 
 - Additional stuff (hovers, animations, effects, etc...)
 
+- All database linked
+
 - Fetched data
 
 # Live

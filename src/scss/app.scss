@@ -1,8 +1,10 @@
-// Link all the layout/files
 @use 'abstracts' as *;
 @use 'core' as *;
+
+// Link all the layout/files
 @use './layout/report';
 @use './layout/stats';
+
 body {
   background: $black;
   .wrapper {
@@ -13,10 +15,6 @@ body {
     @include media($break-2) {
       @include flex;
       padding: $spacing;
-      // margin-top: 90%;
-    }
-    @include media($break-3) {
-      // margin-top: 240%;
     }
   }
 }
@@ -34,6 +32,6 @@ body {
   @include media($break-3) {
     --row-num: 6;
     --col-num: 1;
-    --card-width: 20rem;
+    --card-width: 19rem;
   }
 }
