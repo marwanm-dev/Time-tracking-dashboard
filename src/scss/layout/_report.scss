@@ -6,29 +6,29 @@
   width: var(--card-width);
   margin-right: $spacing;
   isolation: isolate;
-  @include media($break-2) {
-    width: calc(var(--card-width) * 2 + calc($grid-gap-row / 2));
+  @include media($br-2) {
+    width: calc(var(--card-width) * 2 + calc($grid__gap__row / 2));
     margin: {
       right: 0;
       bottom: $spacing;
     }
   }
-  @include media($break-3) {
-    width: calc(var(--card-width));
+  @include media($br-3) {
+    width: var(--card-width);
   }
   &-profile {
-    height: calc($card-img-height + var(--card-height) + $grid-gap-row);
+    height: calc($card__img__height + var(--card-height) + $grid__gap__row);
     position: relative;
-    padding: $spacing-sml;
+    padding: $sml__spacing;
     background: $report;
     border-radius: $radius;
-    @include media($break-2) {
-      @include flex(row, initial); //? from here
+    @include media($br-2) {
+      @include flex-row();
       height: var(--card-height);
     }
     .pic {
-      margin-bottom: $spacing-sml;
-      @include media($break-2) {
+      margin-bottom: $sml__spacing;
+      @include media($br-2) {
         margin : {
           right: $spacing;
           bottom: 0;
@@ -36,7 +36,6 @@
       }
       img {
         width: 54px;
-        height: 54px;
         border-radius: 50%;
         border: 2px solid $white;
       }
@@ -49,7 +48,7 @@
       width: 100%;
       height: var(--card-height);
       border-radius: 0 0 $radius $radius;
-      background: $dark-blue;
+      background: $dark__blue;
       position: absolute;
       bottom: calc(var(--card-height) * -1 + $radius); //! Fix
       left: 0;
@@ -67,10 +66,10 @@
         padding: 0.6rem 1.5rem;
         //! hovers over wrapper! => z-index = -1
         &.active {
-          color: $pale-blue;
+          color: $pale__blue;
         }
         &:hover {
-          color: $pale-blue;
+          color: $pale__blue;
         }
       }
     }

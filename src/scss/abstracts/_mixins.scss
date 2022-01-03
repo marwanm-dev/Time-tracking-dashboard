@@ -1,14 +1,55 @@
 // Mixins
 @use './variables' as *;
 
-@mixin flex($dir: column, $jus: center, $alg: center) {
+@mixin flex-row($just: initial, $align: initial, $gap: initial) {
   display: flex;
-  flex-direction: $dir;
-  justify-content: $jus;
-  align-items: $alg;
+  flex-direction: row;
+  justify-content: $just;
+  align-items: $align;
+  gap: $gap;
 }
-@mixin media($size) {
-  @media (max-width: #{$size}px) {
+@mixin flex-col($just: initial, $align: initial, $gap: initial) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $just;
+  align-items: $align;
+  gap: $gap;
+}
+// Include on inputs:not([type="button"],[type="submit"]) elements
+@mixin input-reset {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+// Include on input[type="button"], input[type="submit"], button elements
+@mixin btn-reset {
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+}
+@mixin list-reset {
+  padding: 0;
+  list-style: none;
+}
+@mixin pseudo-reset {
+  content: '';
+  position: absolute;
+}
+// Media query
+@mixin media($max__width) {
+  @media (max-width: #{$max__width}px) {
     @content;
   }
 }
+
+/*
+* Default breakpoints
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
+*/

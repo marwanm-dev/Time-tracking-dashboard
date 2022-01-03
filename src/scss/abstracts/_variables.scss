@@ -4,52 +4,54 @@
 
 // ## Primary
 $report: hsl(246, 80%, 60%);
-$card-work: hsl(15, 100%, 70%); // work
-$card-play: hsl(195, 74%, 62%); // play
-$card-study: hsl(348, 100%, 68%); // study
-$card-exercise: hsl(145, 58%, 55%); // exercise
-$card-social: hsl(264, 64%, 52%); // social
-$card-self-care: hsl(43, 84%, 65%); // self care
-$card-types: (
-  'work': $card-work,
-  'play': $card-play,
-  'study': $card-study,
-  'exercise': $card-exercise,
-  'social': $card-social,
-  'self-care': $card-self-care,
+$card__work: hsl(15, 100%, 70%); // work
+$card__play: hsl(195, 74%, 62%); // play
+$card__study: hsl(348, 100%, 68%); // study
+$card__exercise: hsl(145, 58%, 55%); // exercise
+$card__social: hsl(264, 64%, 52%); // social
+$card__self__care: hsl(43, 84%, 65%); // self care
+$card__types: (
+  'work': $card__work,
+  'play': $card__play,
+  'study': $card__study,
+  'exercise': $card__exercise,
+  'social': $card__social,
+  'self-care': $card__self__care,
 );
 
 // ## Secondary
-$dark-blue: hsl(235, 46%, 20%);
-$light-gray: hsl(235, 45%, 61%);
-$pale-blue: hsl(236, 100%, 87%);
+$dark__blue: hsl(235, 46%, 20%);
+$light__gray: hsl(235, 45%, 61%);
+$pale__blue: hsl(236, 100%, 87%);
 
 // ## Neutral
 $black: hsl(226, 43%, 10%);
 $white: white;
 
 // # Typography
-$font-family: 'Rubik', sans-serif;
-$font-size: 18px; // card titles e.g. Work, Play
+$font__size: 18px; // card titles e.g. Work, Play
+$font__family: 'Rubik', sans-serif;
 $fw-sml: 300;
 $fw-med: 400;
 $fw-lrg: 500;
 
 // # Others
-$spacing-lrg: 7.5rem;
+$lrg__spacing: 7.5rem;
 $spacing: 1.5rem;
-$spacing-sml: 1rem;
+$sml__spacing: 1rem;
 $radius: 0.925rem;
-$card-img-height: 3rem;
-$grid-gap-row: 4rem;
+$card__img__height: 3rem;
+$grid__gap__row: 4rem;
 
 // # Transitions
-$transition: all 0.3s;
+$dur: 0.3s;
+$eff: cubic-bezier(0.65, 0.05, 0.36, 1); // easeInOutCubic
+$tr: $dur $eff;
 
 // # Breakpoints
-$break-1: 810;
-$break-2: 720;
-$break-3: 480;
+$br-1: 860;
+$br-2: 720;
+$br-3: 480;
 
 // # Custom Props
 :root {
