@@ -9,7 +9,7 @@
 
 # Live
 
-- https://marodevv-time-tracking-dashboard.pages.dev
+- https://marodevv-time-tracking-dashboard.vercel.app
 
 # Credit
 
