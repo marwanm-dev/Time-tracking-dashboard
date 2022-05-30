@@ -1,3 +1,6 @@
-.vscode
 node_modules
-/dist
+dist
+design
+logs
+.vscode
+.env
