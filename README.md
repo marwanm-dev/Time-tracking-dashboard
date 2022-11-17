@@ -10,7 +10,7 @@
 
 ## Live
 
-> https://marodevv-time-tracking-dashboard.vercel.app
+> https://marwanmodev-time-tracking-dashboard.vercel.app
 
 ## Credit
 
